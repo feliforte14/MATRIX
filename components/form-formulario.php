@@ -13,11 +13,7 @@ if (empty($_SESSION['csrf'])) { $_SESSION['csrf'] = bin2hex(random_bytes(16)); }
     <textarea name="comentario" rows="3" required placeholder="¿Qué te pareció Matrix?"></textarea>
   </label><br><br>
 
-  <div>
-    <span>¿La recomendarías?</span><br>
-    <label><input type="radio" name="recomendar" value="sí" required> Sí</label>
-    <label><input type="radio" name="recomendar" value="no"> No</label>
-  </div><br>
+  <br>
 
   <button class="btn" type="submit">Enviar comentario</button>
 </form>
